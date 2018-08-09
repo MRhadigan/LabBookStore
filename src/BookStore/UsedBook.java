@@ -6,6 +6,7 @@ public class UsedBook extends Book {
 
 	/**
 	 * @return 
+	 * @return 
 	 * 
 	 */
 	public static String used() {
@@ -15,16 +16,20 @@ public class UsedBook extends Book {
 		usedBook.add("2: Orson Scott Card, Ender's Game, 9.99, 34019581093");
 		usedBook.add("3: Monica's Pizza, Monica Green, 6.99, 4810398140");
 		
-		for (i = 0; i < usedBook.size(); i++);
+		for (String arrBook: usedBook) {
+			System.out.println(usedBook.toString());
+		}
+		return "";
+		
+		//for (i = 0; i < usedBook.size(); i++);
 		
 		
-		return usedBook.get(i);
+		//return usedBook.get(1) + usedBook.get(2) + usedBook.get(3);
 	
-	
-	
+
 	}
 	
-	public static String newBook() {
+	public static  String newBook() {
 		
 	int i;
 	ArrayList<String> newBook = new ArrayList<>();
@@ -32,10 +37,10 @@ public class UsedBook extends Book {
 	newBook.add("2: Beginning Java, Joel Murach, 39.99, 394810934531");
 	newBook.add("3: Dictionary, John Doe, 19.99, 39481093831");
 	
-	for (i = 0; i < newBook.size(); i++);
-	
-	
-	return newBook.get(i);
+//	for (i = 0; i < newBook.size(); i++);
+//	
+//	
+return newBook.get(0) + newBook.get(1) + newBook.get(2);
 	
 	}
 
